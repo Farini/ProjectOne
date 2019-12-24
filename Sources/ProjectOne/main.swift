@@ -1,30 +1,24 @@
 print("Hello, Farini!")
-print("How are you, friend?")
+print("This app: Project One. Lets check what it can do.")
 
+// MARK: - Operating System
 #if os(Linux)
-
 // Code specific to Linux
-print("Linux also says Hello")
+print("Running on Linux")
 
 #elseif os(macOS)
-
 // Code specific to macOS
-print("Mac also says Hello")
-
+print("Running on MacOS")
 #endif
 
 #if canImport(UIKit)
-
-// Code specific to platforms where UIKit is available
-print("UIKit also says Hello")
-
+print("UIKit can be imported")
 #endif
 
+// MARK: - Foundation
 #if canImport(Foundation)
-
-print("Foundation also says Hello")
+print("Foundation can be imported")
 // Code specific to platforms where Foundation is available
-
 #endif
 
 
