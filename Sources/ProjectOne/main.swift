@@ -24,6 +24,8 @@ print("Foundation can be imported")
 
 if CommandLine.arguments.count != 2 {
     print("Usage: hello NAME")
+    let fact = factorial(5)
+    print("Factorial 5: \(fact)")
 } else {
     let name = CommandLine.arguments[1]
     sayHello(name: name)
